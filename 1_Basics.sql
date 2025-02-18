@@ -32,5 +32,3 @@ SELECT database();
 
 
 
-
-27 minutes

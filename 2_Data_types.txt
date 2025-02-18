@@ -1,0 +1,105 @@
+In MySQL, data types define the kind of values that can be stored in a table's columns. Choosing the appropriate data type ensures efficient storage and accurate data retrieval. MySQL offers several categories of data types:
+
+
+
+
+Numeric Data Types
+These types are used for numerical values.
+
+
+
+Integer Types:
+TINYINT: A very small integer. Signed range: -128 to 127. Unsigned range: 0 to 255.
+SMALLINT: A small integer. Signed range: -32,768 to 32,767. Unsigned range: 0 to 65,535.
+MEDIUMINT: A medium-sized integer. Signed range: -8,388,608 to 8,388,607. Unsigned range: 0 to 16,777,215.
+INT or INTEGER: A standard integer. Signed range: -2,147,483,648 to 2,147,483,647. Unsigned range: 0 to 4,294,967,295.
+BIGINT: A large integer. Signed range: -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807. Unsigned range: 0 to 18,446,744,073,709,551,615.
+
+
+
+Floating-Point Types:
+FLOAT: A small (single-precision) floating-point number.
+DOUBLE: A normal-size (double-precision) floating-point number.
+
+
+
+Fixed-Point Types:
+DECIMAL: An exact fixed-point number.
+Note: The UNSIGNED attribute can be applied to numeric types to disallow negative values.
+
+
+
+
+
+
+
+
+String Data Types
+These types are used for text and binary data.
+
+
+
+Character Types:
+CHAR: A fixed-length string.
+VARCHAR: A variable-length string.
+
+
+
+Text Types:
+TINYTEXT: A small text column.
+TEXT: A standard text column.
+MEDIUMTEXT: A medium-length text column.
+LONGTEXT: A long text column.
+
+
+
+Binary Types:
+BINARY: Similar to CHAR, but stores binary byte strings.
+VARBINARY: Similar to VARCHAR, but stores binary byte strings.
+
+
+
+Blob Types:
+TINYBLOB: A small binary large object.
+BLOB: A standard binary large object.
+MEDIUMBLOB: A medium-sized binary large object.
+LONGBLOB: A large binary large object.
+
+
+
+Enumeration Types:
+ENUM: A string object with a value chosen from a list of permitted values.
+SET: A string object that can have zero or more values, each chosen from a list of permitted values.
+
+
+
+
+
+
+
+
+
+Date and Time Data Types
+These types are used for temporal data.
+
+DATE: A date value in 'YYYY-MM-DD' format.
+TIME: A time value in 'HH:MM:SS' format.
+DATETIME: A combination of date and time in 'YYYY-MM-DD HH:MM:SS' format.
+TIMESTAMP: A timestamp value in 'YYYY-MM-DD HH:MM:SS' format, typically used for tracking changes to records.
+YEAR: A year value in four-digit format.
+JSON Data Type
+JSON: Stores JSON (JavaScript Object Notation) data, allowing for efficient access and manipulation of JSON documents.
+
+
+
+
+
+
+
+Spatial Data Types
+These types are used for geometric data.
+
+GEOMETRY: A spatial value of any type.
+POINT: A point in 2D space.
+LINESTRING: A sequence of points forming a continuous line.
+POLYGON: A planar surface defined by one exterior boundary and zero or more interior boundaries.
