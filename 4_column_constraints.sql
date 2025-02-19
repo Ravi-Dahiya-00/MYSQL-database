@@ -48,3 +48,50 @@ SELECT * FROM grocery_orders;
 
 
 
+CREATE TABLE punjab_national_bank
+(
+    acc_no INT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    balance VARCHAR(50),
+    acc_type VARCHAR(50) NOT NULL DEFAULT "saving"
+    
+);
+
+INSERT INTO punjab_national_bank(acc_no,name) VALUES(1001,'paul');
+INSERT INTO punjab_national_bank(acc_no,name) VALUES(1002,'paul'),(1003,'ravi');
+
+SELECT * FROM punjab_national_bank;
+
+
+
+
+-- The AUTO_INCREMENT attribute in MySQL automatically generates unique sequential values for a column, usually used with Primary Keys.
+
+-- Why Use AUTO_INCREMENT?
+-- ✅ Eliminates manual entry of unique IDs
+-- ✅ Ensures each record has a unique identifier
+-- ✅ Simplifies data insertion
+
+
+
+CREATE TABLE bank_employees (
+    emp_id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL
+);
+
+
+INSERT INTO bank_employees(emp_id,name) VALUES(1001,"ravi");
+-- next auto_increment will start from 1001;
+
+
+
+
+
+
+
+-- An alias in MySQL is a temporary name given to a table or a column to make queries more readable. It is created using the AS keyword.
+
+SELECT acc_no AS 'ACCOUNT_NO.' FROM punjab_national_bank;
+
+-- 📝 Note: AS is optional in column aliases, so you can also write:
+SELECT acc_no 'ACCOUNT_NO.',name 'Customer_name' FROM punjab_national_bank;
