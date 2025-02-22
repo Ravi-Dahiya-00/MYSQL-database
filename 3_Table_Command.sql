@@ -111,3 +111,75 @@ CREATE TABLE deleted_table;
 
 
 DROP TABLE deleted_table;
+
+
+
+
+
+
+
+
+
+
+
+-- ALTER Command in MySQL
+-- The ALTER command in MySQL is used to modify the structure of an existing table. It allows you to:
+-- ✅ Add, delete, or modify columns.
+-- ✅ Change data types of columns.
+-- ✅ Rename tables or columns.
+-- ✅ Add or remove constraints (like PRIMARY KEY, FOREIGN KEY).
+
+
+-- ALTER TABLE table_name action;
+
+
+
+ALTER TABLE students ADD age INT;
+-- ✅ Adds a new column age of type INT to the students table.
+
+
+-- ✅ Adds department and experience columns to the table.
+ALTER TABLE students ADD COLUMN department VARCHAR(50),ADD COLUMN experience INT;
+
+
+
+
+ALTER TABLE students MODIFY experience DECIMAL(10,2);
+-- ✅ Changes the experience column type to DECIMAL(10,2).
+
+
+
+ALTER TABLE students CHANGE COLUMN age employee_age INT;
+-- ✅ Renames age to employee_age.
+
+
+
+ALTER TABLE students DROP COLUMN department;
+-- ✅ Removes the department column.
+
+
+
+ALTER TABLE students RENAME TO Staff;
+-- ✅ Renames students table to Staff.
+
+
+
+ALTER TABLE students ADD PRIMARY KEY (name);
+-- ✅ Sets name as the primary key.
+
+
+
+ALTER TABLE students DROP PRIMARY KEY;
+-- ✅ Removes the primary key constraint.
+
+-- 🔹 Key Points About ALTER Command
+-- ✅ Used to modify existing tables.
+-- ✅ Can add, delete, rename, and modify columns.
+-- ✅ Can add or drop constraints (PRIMARY KEY, FOREIGN KEY).
+-- ✅ Can rename tables.
+
+
+
+
+
+
