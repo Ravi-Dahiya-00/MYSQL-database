@@ -78,10 +78,44 @@ SELECT * FROM exercise1 WHERE first_name LIKE '____';
 
 
 
+USE learning_db;
+SELECT * FROM exercise1;
 
 
 
 
 
 -- The LIMIT keyword in MySQL is used to restrict the number of rows returned by a query. It is useful when fetching a specific number of records from a table.
+
+SELECT * FROM exercise1 LIMIT 5;
+-- ✅ Returns only the first 5 rows from the Employees table.
+
+
+SELECT * FROM exercise1 LIMIT 3,5;
+-- it will start from 3rd row and take 5 rows
+-- ✅ Skips the first 2 rows and fetches the next 3 rows.
+-- 📌 Syntax: LIMIT offset, number_of_rows
+-- offset: Number of rows to skip.
+-- number_of_rows: Number of rows to return.
+
+
+
+SELECT * FROM exercise1 ORDER BY salary DESC LIMIT 5;
+-- ✅ Returns the top 5 highest salaries.
+
+
+
+-- learn Pagination with LIMIT and OFFSET
+
+
+
+-- Key Points About LIMIT:
+-- ✅ Used to control the number of rows returned.
+-- ✅ Works best with ORDER BY for sorted results.
+-- ✅ Supports LIMIT offset, count for skipping rows.
+-- ✅ Commonly used in pagination for large datasets.
+
+
+
+
 
