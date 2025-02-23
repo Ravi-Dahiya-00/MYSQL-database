@@ -18,13 +18,13 @@ BIGINT: A large integer. Signed range: -9,223,372,036,854,775,808 to 9,223,372,0
 
 
 Floating-Point Types:
-FLOAT: A small (single-precision) floating-point number.
-DOUBLE: A normal-size (double-precision) floating-point number.
-
+FLOAT: A small (single-precision) floating-point number.    (upto 7 digits,take 4 byte of memory)
+DOUBLE: A normal-size (double-precision) floating-point number.           (upto 15 digits,take 8 byte of memory)
+ 
 
 
 Fixed-Point Types:
-DECIMAL: An exact fixed-point number.
+DECIMAL: An exact fixed-point number.   DECIMAL(5,2)                           5--> total_digit        2--> digits after decimal 
 Note: The UNSIGNED attribute can be applied to numeric types to disallow negative values.
 
 

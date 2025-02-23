@@ -45,3 +45,28 @@ SELECT * FROM employees_exercise WHERE first_name LIKE 'a%';
 
 
 SELECT * FROM employees_exercise WHERE last_name LIKE '____';
+
+
+
+
+
+
+
+
+
+
+-- exercise 2
+
+SELECT COUNT(emp_id) AS total_employees FROM employees_exercise;
+
+
+SELECT dept,COUNT(emp_id) AS emp_dept FROM employees_exercise GROUP BY dept;
+
+
+SELECT MIN(salary) AS lowest_salary FROM employees_exercise;
+use learning_db;
+SELECT * FROM employees_exercise WHERE salary=(SELECT MAX(salary) AS max_salary_emp_details FROM employees_exercise);
+
+SELECT SUM(salary) FROM employees_exercise WHERE dept='Loan';
+
+SELECT dept,AVG(salary) AS dept_avg_salary FROM employees_exercise  GROUP BY dept;
