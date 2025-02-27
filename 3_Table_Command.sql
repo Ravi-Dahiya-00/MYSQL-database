@@ -177,8 +177,8 @@ ALTER TABLE students DROP PRIMARY KEY;
 -- ✅ Can add, delete, rename, and modify columns.
 -- ✅ Can add or drop constraints (PRIMARY KEY, FOREIGN KEY).
 -- ✅ Can rename tables.
-
-
+use learning_db;
+DESCRIBE students;
 
 
 

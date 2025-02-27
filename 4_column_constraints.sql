@@ -164,7 +164,7 @@ CREATE TABLE check_employees (
     age INT CHECK (age >= 18),  -- Ensures age is at least 18
     salary DECIMAL(10,2) CHECK (salary > 0)  -- Salary must be positive
 );
-USE learning_db;
+
 
 INSERT INTO check_employees (age, salary) VALUES (25, 50000); 
  -- ✅ Allowed
@@ -181,7 +181,8 @@ DESCRIBE check_employees;
 
 
 -- Removing a CHECK Constraint
-ALTER TABLE employees ADD CONSTRAINT chk_salary CHECK (salary > 0);
+ALTER TABLE employees DROP CONSTRAINT chk_salary;
+
 
 
 
@@ -207,6 +208,7 @@ CREATE TABLE constraints_employees (
 
 DESCRIBE constraints_employees;
 
+SELECT * FROM constraints_employees;
 
 
 -- Adding Named Constraints to an Existing Table
