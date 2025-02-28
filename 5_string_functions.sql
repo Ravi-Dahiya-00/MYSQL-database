@@ -15,7 +15,7 @@ INSERT INTO string_functions(first_name,last_name) VALUES('harsh','Yadav'),('moh
 SELECT id, CONCAT(first_name," ",last_name) AS full_name FROM string_functions;
 
 
-SELECT id, CONCAT("Ram-Ram ",first_name) AS full_name FROM string_functions;
+SELECT id, CONCAT("Ram-Ram ",first_name) AS welcome_person FROM string_functions;
 
 
 -- Using CONCAT_WS() (With Separator)
